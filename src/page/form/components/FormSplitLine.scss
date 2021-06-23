@@ -1,0 +1,27 @@
+.act-form__line {
+  position: relative;
+  width: 100%;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #d5d5d5;
+  }
+  &-type-top {
+    &::after {
+      top: 0;
+    }
+  }
+  &-type-center {
+    &::after {
+      top: 50%;
+    }
+  }
+  &-type-bottom {
+    &::after {
+      bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.act-form {
+  &__radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 0;
+    &-item {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 86px;
+      padding: 12px 0;
+    }
+    &-model {
+      position: absolute;
+      width: 0;
+      height: 0;
+      visibility: hidden;
+      opacity: 0;
+    }
+    &-icon {
+      box-sizing: border-box;
+      width: 36px;
+      height: 36px;
+      margin-right: 16px;
+      border-radius: 50%;
+      border: 2px solid #999;
+      transition: all ease 0.25s;
+    }
+    &-model:checked + .act-form__radio-icon {
+      border-width: 12px;
+    }
+    &-label {
+      font-size: 32px;
+      color: #333333;
+      line-height: 40px;
+    }
+    &-theme-0 {
+      .act-form__radio {
+        &-model:checked + .act-form__radio-icon {
+          border-color: #1aad19;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.act-form {
+  &__map {
+    width: 100%;
+    height: 348px;
+    padding: 24px 0;
+    > div {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

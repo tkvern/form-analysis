@@ -1,0 +1,51 @@
+.act-form {
+  &__select {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 16px;
+    padding: 0 32px;
+    font-size: 32px;
+    color: #333333;
+    line-height: 80px;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    position: relative;
+    background: #ffffff;
+    &-value {
+      line-height: 80px;
+    }
+    &-placeholder {
+      line-height: 80px;
+      color: #cccccc;
+    }
+    &-arrow {
+      position: absolute;
+      right: 24px;
+      top: 24px;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      line-height: 32px;
+      color: #888;
+      font-size: 16px;
+      font-weight: bold;
+      transform: rotate(90deg);
+    }
+    &-close {
+      position: absolute;
+      z-index: 2;
+      right: 24px;
+      top: 24px;
+      width: 32px;
+      height: 32px;
+      text-align: center;
+      line-height: 32px;
+      color: #888;
+      font-size: 32px;
+      &.iconfont {
+        font-size: 32px;
+      }
+    }
+  }
+}

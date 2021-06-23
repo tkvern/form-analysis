@@ -1,0 +1,74 @@
+.act-form {
+  &__upload {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0;
+    &-item {
+      position: relative;
+      width: 144px;
+      height: 144px;
+      margin: 0 20px 20px 0;
+      background: #fff;
+      border-radius: 8px;
+      span {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        overflow: hidden;
+        img {
+          display: block;
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+      i {
+        position: absolute;
+        right: -16px;
+        top: -16px;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        line-height: 32px;
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+    &-button {
+      position: relative;
+      width: 144px;
+      height: 144px;
+      border-radius: 8px;
+      border: 1px solid #d5d5d5;
+      background: #ffffff;
+      input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0 20px 20px 0;
+        opacity: 0;
+      }
+      i {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        font-size: 40px;
+        font-weight: bold;
+        color: #999999;
+        line-height: 144px;
+        text-align: center;
+      }
+    }
+    &-theme-0 {
+      .act-form__upload {
+        &-button {
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
