@@ -581,6 +581,7 @@ export default function Index({
           )}
         </div>
       </div>
+      {/* 兼容设计器和展示端显示 */}
       {platform !== 'bm' && (
         <div
           className={`act-form__submit act-form__submit-theme-${formModel.theme}`}
